@@ -20,7 +20,10 @@ describe ExecutivesController do
 		expect(response).to have_http_status(201)
 	end
 
-
+	# it "should update an executive" do
+	# 	patch :update, executive: FactoryGirl.attributes_for(:an_executive)
+	# 	expect(response).to have_http_status(204)
+	# end
 	
 	
 end
