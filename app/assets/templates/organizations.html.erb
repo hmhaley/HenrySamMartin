@@ -1,10 +1,14 @@
-<div ng-repeat="organization in organizations">
+
+<h1 class="company-search" >Company Search</h1>
+<input class="search-comp" ng-model="search" type="search" placeholder="Search LA companies &amp People">
+<div class="org" ng-repeat="organization in organizations | filter: search">
     
-<p>{{organization.name}}</p>
+<h1>{{organization.name}}</h1>
 <p>{{organization.address_street}}</p>
 <p>{{organization.hq_address_city}}</p>
-<p>{{organization.hq_address_state}}</p>
 <p>{{organization.hq_address_zip}}</p>
+<p> {{organization.hq_telephone}}</p>
+<p>{{organization.web_url}}</p>
 <p>{{organization.sector_type}}</p>    
     
 

@@ -15,9 +15,9 @@ angular.module('app')
 
     },
   
-    createOrganizationRecord: function( org_name, address, city, state, zip, sector){
+    createOrganizationRecord: function( org_name, address, city, phone, zip, sector, website){
       // LOOK UP AT POST METHOD IN ANGULAR JS DOC https://docs.angularjs.org/api/ng/service/$http 
-      $http.post( '/api/organizations', { name: org_name  , address_street: address, hq_address_city: city, hq_address_state: state, hq_address_zip: zip, sector_type: sector});
+      $http.post( '/api/organizations', { name: org_name  , address_street: address, hq_address_city: city, hq_telephone: phone, hq_address_zip: zip, sector_type: sector, web_url: website});
      
 
     }
