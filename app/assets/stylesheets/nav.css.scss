@@ -1,6 +1,27 @@
 @import url(//fonts.googleapis.com/css?family=Raleway:600,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+#brand {
+    
+    a {
+
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      line-height: 50px;
+      font-size: 18px;
+      margin-left: 4px;
+      letter-spacing: 3px;
+      float: left;
+      text-decoration: none;
+    
+    }
+}
+
+
+
 #style-block {
   width: 100%;
   display:block;
@@ -23,7 +44,7 @@ nav {
     width: 90%;
     margin-left:5%;
 
-        a {
+        #brand {
            -webkit-font-smoothing: antialiased;
           font-family: 'Open Sans', sans-serif;
           text-transform: uppercase;

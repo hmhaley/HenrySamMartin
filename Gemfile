@@ -6,6 +6,8 @@ gem 'rails', '4.0.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+
+gem 'angular-rails-templates'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -16,8 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 #Use Templates With Angular
-gem 'angular-rails-templates'
-
+gem 'turbolinks'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

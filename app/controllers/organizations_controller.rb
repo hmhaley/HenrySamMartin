@@ -1,5 +1,7 @@
 class OrganizationsController < ApplicationController
 
+  skip_before_filter :authorize
+
   def index
     organizations = Organization.all
     render json: organizations, status: 200

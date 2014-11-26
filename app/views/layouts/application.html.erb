@@ -4,26 +4,41 @@
   <title>Stratevarius</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application" %>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 </head>
-<body ng-app="app">
-
+<body>
 <nav>
   <div id="nav-hold">
-    <h1 id="brand"><a ui-sref="main">Stratevarius</a></h1>
+    <h1 id="brand"><%= link_to "STRATEVARIUS", root_path %></h1>
     <ul>
-      <li><a ui-sref="executives">People</a></li>
-      <li><a ui-sref="signin">Sign In</a></li>
-      <li><a ui-sref="signup">Sign Up</a></li>
+
+    <% if current_executive %>
+      
+     <li> <%= link_to "Log Out", logout_path %></li>
+      <li> <%= link_to "Browse", browse_path %></li>
+    <% else %>
+      <li><%= link_to "Sign Up", new_executive_path %></li>
+      <li><%= link_to "Sign In", sessions_new_path %></li>
+    <% end %>
     </ul>
   </div>
+  
 </nav>
+  
 <div id="style-block"></div>
-
+<% if current_executive %>
+  <div id="notice">
+    <div id="notice-text">
+      <p>Logged in as <span><%= current_executive.email %></span>.</p>
+    </div>
+    <div id="exit"><p>X</p></div>
+  </div>
+<% end %>
+  
 
 
 <%= yield %>
-
 
 
 </body>

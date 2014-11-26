@@ -1,13 +1,13 @@
 angular.module('app')
 
-.controller('executiveController', function ($scope, api){
+.controller('organizationsController', function ($scope, api){
 
-  var exec_endpoint = 'api/executives';
+  var org_endpoint = 'api/organizations';
 
-  api.fetchAll(exec_endpoint)
+  api.fetchAll(org_endpoint)
   .then(function(data){
     // console.log(data.data[0].image);
-    $scope.executives = data.data;
+    $scope.organizations = data.data;
   });
 
   // $scope.createExecutive = function(){

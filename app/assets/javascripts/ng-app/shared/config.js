@@ -2,30 +2,25 @@ angular.module('app')
 
 .config(function ($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/main');
+  $urlRouterProvider.otherwise('/');
 
     $stateProvider
 
-      .state('main', {
-          url: '/main',
-          templateUrl: 'main.html',
-          controller: 'mainController'
+      .state('index', {
+          url: '/',
+          templateUrl: 'index.html',
+          controller: 'indexController'
       })
-      .state('signin', {
-          url: '/signin',
-          templateUrl: 'signin.html',
-          controller: 'signInController'
+      .state('about', {
+          url: '/about',
+          templateUrl: 'about.html',
+          controller: 'aboutController'
       })
-      .state('signup', {
-          url: '/signup',
-          templateUrl: 'signup.html',
-          controller: 'signUpController'
-      })
-      .state('executives', {
-          url: '/executives',
-          templateUrl: 'executives.html',
-          controller: 'executiveController'
+      .state('organizations', {
+          url: '/organizations',
+          templateUrl: 'organizations.html',
+          controller: 'organizationsController'
       });
-        
+      
 
 });

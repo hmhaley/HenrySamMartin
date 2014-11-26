@@ -4,6 +4,7 @@
 
 
 .sign-form-body {
+
   margin-top: 20px!important;
   display:block;
   float: left;
@@ -71,6 +72,21 @@
       font-size: 20px;
       margin-bottom: 14px;
     }
+    input[name="commit"] {
+      height: 60px;
+      background-color: #1F2610;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      color: #f9f9f9;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 20px;
+      margin-bottom: 14px;
+
+}
+
   }
   .sign-link-box {
     height: 60px;
@@ -96,5 +112,3 @@
 input:focus {
   background: #DAD9D7!important;
 }
-
-
