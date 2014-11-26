@@ -14,8 +14,15 @@ Stratevarius::Application.routes.draw do
   
 		resources :relationships, only: [:index, :create, :update, :destroy]
 		
+<<<<<<< HEAD
+	end
+
+	root 'application#index'
+	resources :sessions, only: [:index, :create, :destroy]
+=======
 	
 
 	root 'executives#landing'
+>>>>>>> master
 
 end 
