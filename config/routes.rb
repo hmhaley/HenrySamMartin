@@ -1,13 +1,21 @@
 Stratevarius::Application.routes.draw do
  
-	scope 'api', defaults: {format: :json} do
-		resources :executives, only: [:index, :create, :update, :destroy]
+  get "sessions/new"
+		resources :executives
+    resources :sessions
+  
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'browse', to: 'application#index', as: 'browse'
+  
+  scope 'api' do
 		resources :organizations, only: [:index, :create, :update, :destroy]
+  end
+
+  
 		resources :relationships, only: [:index, :create, :update, :destroy]
 		
-	end
+	
 
-	root 'application#index'
-	resources :sessions, only: [:index, :create, :destroy]
+	root 'executives#landing'
 
 end 

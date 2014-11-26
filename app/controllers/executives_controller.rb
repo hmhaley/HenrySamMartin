@@ -2,41 +2,27 @@ class ExecutivesController < ApplicationController
 
 skip_before_filter :authorize
 
-  def index
-    executives = Executive.all
-    render json: executives, status: 200
+  def new
+    @executive = Executive.new
   end
+
 
   def create
-    executive = Executive.create(exec_params)
-    if executive.save
-      session[:executive_id] = executive.id
-      render json: executive, status: 201, 
-      notice: 'User was successfully created, and you will now be directed to the organizations.'
-    # else
-    #   render 'index'
+    @executive = Executive.new(executive_params)
+    if @executive.save
+      session[:executive_id] = @executive.id
+      redirect_to root_url, notice: "Thank you for signing up!"
+    else  
+      render "new"
     end
   end
 
-  def update
-    executive = Executive.find(params[:id])
-    if executive.update_attributes(exec_params)
-      render nothing: true, status: 204, 
-      notice: 'User was successfully updated.'
-    # else
-    #   render 'index'
-    end
-  end
-
-  def destroy
-    executive = Executive.find(params[:id])
-    executive.destroy
-    render nothing: true, status: 204
-  end
+  
 
   private
 
-  def exec_params
+  def executive_params
+
     params.require(:executive).permit(
       :username, 
       :password,
