@@ -1,0 +1,33 @@
+<div class="sign-form-body">
+
+
+<h1 class="form-title">Sign Up</h1>
+
+
+
+<%= form_for @executive do |f| %>
+  <% if @executive.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @executive.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+    
+    <%= f.text_field :email,  :placeholder => "Your Email" %>
+  
+  
+    
+    <%= f.password_field :password,  :placeholder => "Your Password" %>
+ 
+  
+    
+    <%= f.password_field :password_confirmation,  :placeholder => "Confirm Password" %>
+  
+    <%= f.submit "Sign Up" %>
+<% end %>
