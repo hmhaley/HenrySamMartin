@@ -7,7 +7,6 @@ gem 'rails', '4.0.4'
 gem 'pg'
 
 
-
 gem 'angular-rails-templates'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'

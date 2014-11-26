@@ -3,7 +3,8 @@
 .org {
   float: left;
   width: 100%;
-  border: 1px solid black;
+  display: block;
+  margin-bottom: 8px;
 
   h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -12,5 +13,10 @@
     font-size: 24px;
     letter-spacing: -1px;
 
+  }
+
+  p {
+    font-size: 20px;
+    font-family: georgia;
   }
 }
