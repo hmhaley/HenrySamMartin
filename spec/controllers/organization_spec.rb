@@ -19,10 +19,4 @@ describe OrganizationsController do
 		expect(response).to have_http_status(201)
 	end
 
-	# it "should post page for create" do
-	# 	post :create (:name => "HSM")
-	# 	expect(response).to be_success
-	# 	expect(response).to have_http_status(201)
-	# end
-	
 end

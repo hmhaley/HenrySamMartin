@@ -7,19 +7,14 @@ describe "visit links on home page" do
 		expect(current_path).to eq(root_path)
 	end
 
-	it "visit the people page" do
-		visit executives_path
-		expect(current_path).to eq(executives_path)
+	it "visit the sign in page" do
+		visit new_session_path
+		expect(current_path).to eq(new_session_path)
 	end
 
-	# it "visit the sign in page" do
-	# 	visit signin
-	# 	expect(current_path).to eq(signin_path)
-	# end
-
-	# it "visit the sign up page" do
-	# 	visit signup_path
-	# 	expect(current_path).to eq(signup_path)
-	# end
+	it "visit the sign up page" do
+		visit new_executive_path
+		expect(current_path).to eq(new_executive_path)
+	end
 
 end
