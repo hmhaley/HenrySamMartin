@@ -6,28 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }: '',{ name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel': '',city: cities.first)
 
+<<<<<<< HEAD
 document.get
+=======
+>>>>>>> master
 
-Executive.create([{
-  username: 'henry', 
-  password_digest: 'password2', 
-  strat_exec_constituent_type: 'owner',
-  prefix: 'Mr.', 
-  firstname: 'Grant',
-  lastname: 'Alexander',
-  suffix: '',
-  email: 'grantalexander@hotmail.com',
-  mobile_tel: '310-999-9999',
-  mobile_carrier: 'att',
-  office_tel: '888-888-8888',
-  social_twitter: 'hszeto',
-  social_linkedin: 'http://www.linkedin.com/pub/hszeto',
-  social_blog: 'blog address',
-  is_verified_by_staff: 'not yet verified by staff',
-  is_verified_by_thirdparty: 'no third party verification',
-  exec_comments_on_self: 'henry loves his testing',
-  is_user: true
-  }]);
 
 Organization.create([
   
@@ -122,5 +105,5 @@ Organization.create([
   web_url: 'www.biagomedia.com', 
   sector_type: "SEO Marketing" }
   
-]);
+])
 
