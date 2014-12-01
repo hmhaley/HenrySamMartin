@@ -1,14 +1,14 @@
 require "rails_helper"
 require 'shoulda/matchers'
 
-describe ExecutivesController do
+# describe ExecutivesController do
 
-	it "should get page for index" do
-		get :index
+# 	it "should get page for index" do
+# 		get :index
 
-		expect(response).to be_success
-		expect(response).to have_http_status(200)
-	end
+# 		expect(response).to be_success
+# 		expect(response).to have_http_status(200)
+# 	end
 
 	# it "should get an object from db" do
 	# 	get :index
