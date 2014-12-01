@@ -20,6 +20,11 @@ skip_before_filter :authorize
     end
   end
 
+  def index
+    executives = Executive.all
+    render json: executives, status: 200
+  end
+
   
 
   private

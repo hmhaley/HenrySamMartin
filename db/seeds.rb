@@ -7,7 +7,6 @@
 #   Mayor.create(name: 'Emanuel': '',city: cities.first)
 
 
-
 Organization.create([
   
   { name: 'CraveLab',  address_street: '123 S Figueroa St', hq_address_city: 'Los Angeles', hq_address_zip: '90012', hq_telephone: '2136131388', web_url: 'cravelab.com', sector_type: "Co-Working Space" },
