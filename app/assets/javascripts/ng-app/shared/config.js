@@ -6,15 +6,15 @@ angular.module('app')
 
     $stateProvider
 
-      .state('index', {
-          url: '/',
-          templateUrl: 'index.html',
-          controller: 'indexController'
+      .state('map', {
+          url: '/map',
+          templateUrl: 'map.html',
+          controller: 'mapController'
       })
-      .state('about', {
-          url: '/about',
-          templateUrl: 'about.html',
-          controller: 'aboutController'
+      .state('signup', {
+          url: '/signup',
+          templateUrl: 'signup.html',
+          controller: 'signupController'
       })
       .state('organizations', {
           url: '/organizations',
