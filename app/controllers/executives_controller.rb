@@ -6,6 +6,9 @@ skip_before_filter :authorize
     @executive = Executive.new
   end
 
+  def landing
+
+  end
 
   def create
     @executive = Executive.new(executive_params)

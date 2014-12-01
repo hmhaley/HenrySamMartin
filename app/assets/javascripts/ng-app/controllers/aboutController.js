@@ -1,6 +1,6 @@
 angular.module('app')
 
-  .controller('aboutController', function($scope, api) {
+  .controller('signupController', function($scope, api) {
 
     $scope.submitRecord = function(){
       
