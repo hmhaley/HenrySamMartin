@@ -46801,3 +46801,7 @@ Started GET "/api/organizations" for 127.0.0.1 at 2014-12-01 19:29:36 -0800
 Processing by OrganizationsController#index as HTML
   [1m[36mOrganization Load (3.8ms)[0m  [1mSELECT "organizations".* FROM "organizations"[0m
 Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 3.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
