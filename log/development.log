@@ -45688,3 +45688,1116 @@ Migrating to AddLatitudeToOrganizations (20141201232722)
   [1m[36mOrganization Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "organizations" WHERE "organizations"."name" = 'Biago Media' LIMIT 1[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "organizations" ("address_street", "created_at", "hq_address_city", "hq_address_zip", "hq_telephone", "name", "sector_type", "updated_at", "web_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["address_street", "606 South Hill Street. Ste 1205"], ["created_at", Tue, 02 Dec 2014 02:03:24 UTC +00:00], ["hq_address_city", "Los Angeles"], ["hq_address_zip", "90014"], ["hq_telephone", ""], ["name", "Biago Media"], ["sector_type", "SEO Marketing"], ["updated_at", Tue, 02 Dec 2014 02:03:24 UTC +00:00], ["web_url", "www.biagomedia.com"]]
   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:04:27 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (3.6ms)
+  [1m[35mExecutive Load (9.6ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 415ms
+
+ActiveRecord::RecordNotFound (Couldn't find Executive with id=1):
+  app/controllers/application_controller.rb:15:in `current_executive'
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__4145905732972571973_70234439851680'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (43.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-12-01 19:04:44 -0800
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-12-01 19:04:48 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-12-01 19:04:57 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfgPqOoSrnD3IHhSCJwiDtE5na0thE0acC/lDHYX4VM=", "email"=>"lt5555", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mExecutive Load (1.7ms)[0m  [1mSELECT "executives".* FROM "executives" WHERE "executives"."email" = 'lt5555' ORDER BY "executives"."id" ASC LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-12-01 19:05:03 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfgPqOoSrnD3IHhSCJwiDtE5na0thE0acC/lDHYX4VM=", "email"=>"lt5555", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mExecutive Load (0.7ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."email" = 'lt5555' ORDER BY "executives"."id" ASC LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-12-01 19:05:17 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfgPqOoSrnD3IHhSCJwiDtE5na0thE0acC/lDHYX4VM=", "email"=>"lt5555@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mExecutive Load (0.7ms)[0m  [1mSELECT "executives".* FROM "executives" WHERE "executives"."email" = 'lt5555@gmail.com' ORDER BY "executives"."id" ASC LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/executives/new" for 127.0.0.1 at 2014-12-01 19:05:20 -0800
+Processing by ExecutivesController#new as HTML
+  Rendered executives/new.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/executives" for 127.0.0.1 at 2014-12-01 19:05:52 -0800
+Processing by ExecutivesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sfgPqOoSrnD3IHhSCJwiDtE5na0thE0acC/lDHYX4VM=", "executive"=>{"firstname"=>"notagain", "lastname"=>"henry", "email"=>"notagainhenry@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mExecutive Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "executives" WHERE "executives"."email" = 'notagainhenry@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (20.2ms)[0m  INSERT INTO "executives" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Tue, 02 Dec 2014 03:05:52 UTC +00:00], ["email", "notagainhenry@gmail.com"], ["firstname", "notagain"], ["lastname", "henry"], ["password_digest", "$2a$10$qajnF7DmVWFLNdp8g2LxQO9XAOKDqj0noQvOMpfiyPBo7HCw9wF2O"], ["updated_at", Tue, 02 Dec 2014 03:05:52 UTC +00:00]]
+  [1m[36m (155.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3078/
+Completed 302 Found in 286ms (ActiveRecord: 177.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:05:53 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.1ms)
+  [1m[35mExecutive Load (1.3ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-12-01 19:05:57 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3078/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:05:57 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-12-01 19:06:01 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-12-01 19:06:15 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/RFNdYlNwy4J/3p7Pi34D4i9F1kBthgXIPCi8UBa3pU=", "email"=>"notagainhenry@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mExecutive Load (1.9ms)[0m  [1mSELECT "executives".* FROM "executives" WHERE "executives"."email" = 'notagainhenry@gmail.com' ORDER BY "executives"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3078/
+Completed 302 Found in 94ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:06:15 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.0ms)
+  [1m[35mExecutive Load (0.7ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/browse" for 127.0.0.1 at 2014-12-01 19:06:17 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.6ms)
+  [1m[36mExecutive Load (0.8ms)[0m  [1mSELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/organizations" for 127.0.0.1 at 2014-12-01 19:06:24 -0800
+Processing by OrganizationsController#index as HTML
+  [1m[35mOrganization Load (1.4ms)[0m  SELECT "organizations".* FROM "organizations"
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (2.3ms)
+  [1m[35mExecutive Load (6.9ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 253ms (Views: 228.1ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:43 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2014-12-01 19:28:44 -0800
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3078/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:46 -0800
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:48 -0800
+
+
+Started GET "/executives/new" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+Processing by ExecutivesController#new as HTML
+  Rendered executives/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:28:53 -0800
+
+
+Started POST "/executives" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+Processing by ExecutivesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ttW83QZdm8CINutfqwH/OWYbq5xpD9pyfrIXKMhxln4=", "executive"=>{"firstname"=>"Mama", "lastname"=>"Mama", "email"=>"mama@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mExecutive Exists (2.8ms)[0m  SELECT 1 AS one FROM "executives" WHERE "executives"."email" = 'mama@gmail.com' LIMIT 1
+  [1m[36mSQL (13.0ms)[0m  [1mINSERT INTO "executives" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Tue, 02 Dec 2014 03:29:12 UTC +00:00], ["email", "mama@gmail.com"], ["firstname", "Mama"], ["lastname", "Mama"], ["password_digest", "$2a$10$GWfGmzWRMqI2tJA5gjaH6.SwB6erKXS7R4Gn4WGcxa3tBbdEc7Uke"], ["updated_at", Tue, 02 Dec 2014 03:29:12 UTC +00:00]]
+  [1m[35m (148.6ms)[0m  COMMIT
+Redirected to http://localhost:3078/
+Completed 302 Found in 265ms (ActiveRecord: 165.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.0ms)
+  [1m[36mExecutive Load (0.8ms)[0m  [1mSELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:12 -0800
+
+
+Started GET "/browse" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.3ms)
+  [1m[35mExecutive Load (0.9ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:14 -0800
+
+
+Started GET "/api/organizations" for 127.0.0.1 at 2014-12-01 19:29:16 -0800
+Processing by OrganizationsController#index as HTML
+  [1m[36mOrganization Load (2.2ms)[0m  [1mSELECT "organizations".* FROM "organizations"[0m
+Completed 200 OK in 57ms (Views: 49.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-12-01 19:29:22 -0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3078/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:29:22 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:23 -0800
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:26 -0800
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6R6EP5IzAGZk4bzXFlPxpYSglPQ/a0m7jhrV9C0EfIM=", "email"=>"mama@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mExecutive Load (1.2ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."email" = 'mama@gmail.com' ORDER BY "executives"."id" ASC LIMIT 1
+Redirected to http://localhost:3078/
+Completed 302 Found in 86ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+Processing by ExecutivesController#landing as HTML
+  Rendered executives/landing.html.erb within layouts/application (0.0ms)
+  [1m[36mExecutive Load (0.9ms)[0m  [1mSELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:33 -0800
+
+
+Started GET "/browse" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+  [1m[35mExecutive Load (0.7ms)[0m  SELECT "executives".* FROM "executives" WHERE "executives"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/angular-navigation.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/angular-organizations.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/landing.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/notice.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/ng-app/app.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/ng-app/controllers/aboutController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/ng-app/controllers/mapController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/ng-app/controllers/organizationsController.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/ng-app/shared/config.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/ng-app/shared/services.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/siteScript.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/signup.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 19:29:35 -0800
+
+
+Started GET "/api/organizations" for 127.0.0.1 at 2014-12-01 19:29:36 -0800
+Processing by OrganizationsController#index as HTML
+  [1m[36mOrganization Load (3.8ms)[0m  [1mSELECT "organizations".* FROM "organizations"[0m
+Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 3.8ms)
