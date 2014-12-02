@@ -7,7 +7,7 @@ skip_before_filter :authorize
   end
 
   def landing
-
+    @organizations = Organization.all
   end
 
   def create
