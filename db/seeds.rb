@@ -5,11 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }: '',{ name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel': '',city: cities.first)
-
+# Organization.destroy_all
+# Organization.create( name: 'CraveLab',  address_street: '123 S Figueroa St', hq_address_city: 'Los Angeles', hq_address_zip: '90012', hq_telephone: '2136131388', web_url: 'cravelab.com', sector_type: "Co-Working Space" )
+# Organization.create( name: 'Opodz', address_street: '362 E 2nd St',hq_address_city:'Los Angeles', hq_address_zip: '90012', hq_telephone: '2135370224', web_url: 'opodz.com', sector_type: "Co-Working Space" )
+# Organization.create( name: 'Kleverdog Coworking', address_street: '418 Bamboo Ln', hq_address_city: 'Los Angeles', hq_address_zip: '90012', hq_telephone: '3239248463', web_url: 'kleverdogcoworking.com', sector_type: "Co-Working Space" )
+# puts Organization.count.to_s
 
 Organization.create([
   
-  { name: 'CraveLab',  address_street: '123 S Figueroa St', hq_address_city: 'Los Angeles', hq_address_zip: '90012', hq_telephone: '2136131388', web_url: 'cravelab.com', sector_type: "Co-Working Space" },
+  { name: 'CraveLab',  address_street: '123 S Figueroa St', hq_address_city: 'Los Angeles', hq_address_zip: '90012', hq_telephone: '2136131388', web_url: 'cravelab.com', sector_type: "Co-Working Space", latitude: '34.057291', longitude: '-118.252842' },
   { name: 'Opodz', address_street: '362 E 2nd St',hq_address_city:'Los Angeles', hq_address_zip: '90012', hq_telephone: '2135370224', web_url: 'opodz.com', sector_type: "Co-Working Space" },
   { name: 'Kleverdog Coworking', address_street: '418 Bamboo Ln', hq_address_city: 'Los Angeles', hq_address_zip: '90012', hq_telephone: '3239248463', web_url: 'kleverdogcoworking.com', sector_type: "Co-Working Space" },
   { name: 'Blankspaces', address_street:'5405 Wilshire Blvd', hq_address_city: 'Los Angeles', hq_address_zip: '90036', hq_telephone: '3233309505', web_url: 'blankspaces.com', sector_type: "Co-Working Space" },
@@ -101,4 +105,3 @@ Organization.create([
   sector_type: "SEO Marketing" }
   
 ])
-

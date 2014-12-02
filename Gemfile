@@ -6,6 +6,8 @@ gem 'rails', '4.0.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+# GeoCoder
+gem 'geocoder'
 
 gem 'angular-rails-templates'
 # Use SCSS for stylesheets
