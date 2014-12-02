@@ -59,7 +59,10 @@ group :development, :test do
 
   #CAPYBARA SUPER STAR POWERS ADDED
   gem 'capybara'
-  
+end
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
 end
 
 # Use unicorn as the app server
